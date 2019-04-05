@@ -3303,6 +3303,41 @@
 	taste_description = "sweet lemons, black pepper, and savory mushroom"
 	color = "#DC971D"
 	strength = 20
+	
+	glass_name = "Hachi"
+	glass_desc = "An unusual fusion of bourbon and sake infused with lemon juice, and mushrooms. Sweet, savory, but mostly weird."
+	
+/datum/reagent/ethanol/ookiinohachi
+	name = "Ookii no Hachi"
+	id = "ookiinohachi"
+	description = "The unusual Hachi cocktail, infused with mega mushroom extract. This strange drink just got a little bigger."
+	taste_description = "sweet lemons, black pepper, and bitter mushroom"
+	color = "#DC971D"
+	strength = 20
+	
+	glass_name = "Okkii no Hachi"
+	glass_desc = "The unusual Hachi cocktail, infused with mega mushroom extract. This strange drink just got a little bigger."
+	
+	/datum/reagent/ookiinohachi/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(M.size_multiplier < RESIZE_HUGE)
+		M.resize(M.size_multiplier+0.01, FALSE)//Increase 1% per tick. Don't animate for 1% size change.
+	return
+	
+	/datum/reagent/ethanol/chiisainohachi
+	name = "Chiisai no Hachi"
+	id = "chiisainohachi"
+	description = "The unusual Hachi cocktail, infused with mega mushroom extract. This strange drink just got a little smaller."
+	taste_description = "sweet lemons, black pepper, and savory mushroom"
+	color = "#DC971D"
+	strength = 20
+	
+	glass_name = "Chiisai no Hachi"
+	glass_desc = "The unusual Hachi cocktail, infused with mega mushroom extract. This strange drink just got a little smaller."
+	
+	/datum/reagent/microcillin/affect_blood(var/mob/living/carbon/M, var/alien, var/removed)
+	if(M.size_multiplier > RESIZE_TINY)
+		M.resize(M.size_multiplier-0.01, FALSE) //Decrease 1% per tick. Don't animate for 1% size change.
+	return
 
 /datum/reagent/drink/freshtea
 	name = "Green tea"
