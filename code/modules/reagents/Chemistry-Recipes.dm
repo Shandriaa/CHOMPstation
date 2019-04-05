@@ -2349,6 +2349,20 @@
 	required_reagents = list("burbon" = 2, "sake" = 1, "lemonjuice" = 1, "mushroom" = 1)
 	result_amount = 5
 
+/datum/chemical_reaction/drinks/ookiinohachi
+	name = "Ookii no Hachi"
+	id = "ookiinohachi"
+	result = "ookiinohachi"
+	required_reagents = list("burbon" = 2, "sake" = 1, "lemonjuice" = 1, "megam" = 1)
+	result_amount = 5
+
+/datum/chemical_reaction/drinks/chiisainohachi
+	name = "Chiisai no Hachi"
+	id = "chiisainohachi"
+	result = "chiisainohachi"
+	required_reagents = list("burbon" = 2, "sake" = 1, "lemonjuice" = 1, "microm" = 1)
+	result_amount = 5
+
 //R-UST Port
 /datum/chemical_reaction/hyrdophoron
 	name = "Hydrophoron"
