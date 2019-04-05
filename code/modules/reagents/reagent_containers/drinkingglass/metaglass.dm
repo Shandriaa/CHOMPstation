@@ -569,3 +569,9 @@ Drinks Data
 
 /datum/reagent/ethanol/hachi
 	glass_icon_state = "hachi"
+	
+/datum/reagent/ethanol/ookiinohachi
+	glass_icon_state = "ookiinohachi"
+	
+/datum/reagent/ethanol/chiisainohachi
+	glass_icon_state = "chiisainohachi"
